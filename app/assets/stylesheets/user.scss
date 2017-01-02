@@ -1,0 +1,23 @@
+.box {
+  max-width: 600px;
+  margin: 40px auto;
+  border: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  border-radius: 3px;
+  .box-title {
+    margin: 0;
+    padding: 15px 20px;
+    font-weight: normal;
+    background: #fafafa;
+    border: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  .box-inner {
+    padding: 20px;
+  }
+  .submit-group{
+    text-align: right;
+  }
+}
