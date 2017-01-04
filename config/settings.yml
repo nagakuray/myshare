@@ -1,0 +1,14 @@
+default: &default
+  url_search_slideshows: "https://www.slideshare.net/api/2/search_slideshows"
+
+development:
+  <<: *default
+  key2: value2.d
+
+test:
+  <<: *default
+  key2: value2.t
+
+production:
+  <<: *default
+  key2: value2.p

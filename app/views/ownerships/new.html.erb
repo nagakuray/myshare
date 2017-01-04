@@ -4,7 +4,7 @@
       <div class="search">
         <%= form_tag '#' , method: :get do %>
           <%= text_field_tag :q , params[:q], placeholder: "スライドのキーワードを入力", required: true %>
-          <%= submit_tag "スライドを検索", name: nil , class: "btn btn-success", data: { disable_with: "検索中..."} %>
+          <%= submit_tag "スライドを検索", name: nil , class: "btn btn-primary", data: { disable_with: "検索中..."} %>
         <% end %>
       </div>
     </div>
