@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+  root 'welcome#index'
+  resources :welcome
 
   devise_for :users
 
-  root 'ownerships#new'
-  resources :ownerships, only: [:create, :destroy,:new, :show]
+  # root 'ownerships#new'
+  # resources :ownerships, only: [:create, :destroy,:new, :show]
 
 
   # The priority is based upon order of creation: first created -> highest priority.

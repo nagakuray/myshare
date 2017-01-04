@@ -1,0 +1,30 @@
+<div class="cover">
+  <div class="cover-inner">
+    <div class="cover-contents">
+      <div class="search">
+        <%= form_tag '#' , method: :get do %>
+          <%= text_field_tag :q , params[:q], placeholder: "スライドのキーワードを入力", required: true %>
+          <%= submit_tag "スライドを検索", name: nil , class: "btn btn-primary", data: { disable_with: "検索中..."} %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="search-result">
+  <% if @slides.present? %>
+    <div class="alert alert-info">
+      <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+      お気に入りしたいスライドがあれば「Like」<br />
+      あとで見たいスライドがあれば「Later」しましょう！
+    </div>
+    <%= render 'slides/slides' , slides: @slides %>
+    <% elsif params[:q].present? %>
+    <div class="alert alert-danger">
+      <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+      検索したスライドはありません<br />
+      キーワードを変えて検索してください。
+    </div>
+  <% end %>
+
+</div>
