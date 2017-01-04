@@ -15,8 +15,8 @@
   <% if @slides.present? %>
     <div class="alert alert-info">
       <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-      お気に入りしたいスライドがあれば「Like」<br />
-      あとで見たいスライドがあれば「Later」しましょう！
+      お気に入りしたいスライドがあれば「お気に入り」<br />
+      あとで見たいスライドがあれば「あとで見る」しましょう！
     </div>
     <%= render 'slides/slides' , slides: @slides %>
     <% elsif params[:q].present? %>

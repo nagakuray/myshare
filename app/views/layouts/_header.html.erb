@@ -20,6 +20,7 @@
               <li><%= link_to "入会してみる" , new_user_registration_path %></li>
               <li><%= link_to "サインイン" , new_user_session_path %></li>
             <% else %>
+              <li><%= link_to "Setting", edit_user_registration_path %></li>
               <li><%= link_to "サインアウト", destroy_user_session_path, method: "delete" %></li>
             <% end %>
           </ul>

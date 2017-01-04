@@ -43,15 +43,52 @@
       -webkit-line-clamp: 2;
     }
   }
-  // .action {
-  //   form {
-  //     float: left;
-  //     margin: 0 3px 0 0;
-  //   }
-  // }
-  // &:hover {
-  //   .action {
-  //     display: block;
-  //   }
-  // }
+  .action {
+    form {
+      float: left;
+      margin: 0 3px 0 0;
+    }
+  }
+  &:hover {
+    .action {
+      display: block;
+    }
+  }
+}
+
+.action {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: none;
+  .btn {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  }
+  .btn-sm {
+    margin: 0 5px 0 0;
+  }
+  .like {
+    &:before {
+      content: "お気に入り";
+    }
+  }
+  .later {
+    &:before {
+      content: "あとで見る";
+    }
+  }
+  .like_it {
+    background-color: #5cb85c;
+    border-color: darken(#5cb85c, 5%);
+    &:before {
+      content: "お気に入り解除";
+    }
+  }
+  .later_it {
+    background-color: #5cb85c;
+    border-color: darken(#5cb85c, 5%);
+    &:before {
+      content: "あとで見ない";
+    }
+  }
 }

@@ -12,6 +12,13 @@
             <a href=<%= slide.xpath('URL').text %>; target="_blank"><%= slide.xpath('Title').text %></a>
           </p>
         </div>
+        <div class="action clearfix">
+          <%= link_to "" , root_path(item_code: "hoge"), class: "btn btn-sm btn-danger btn-like like", remote: true, method: :get %>
+          <%= link_to "" , root_path(item_code: "hoge"), class: "btn btn-sm btn-info btn-later later", remote: true, method: :get %>
+          <% if !slide.xpath('DownloadUrl').text.blank? %>
+            <%= link_to "ダウンロード" , slide.xpath('DownloadUrl').text, class: "btn btn-sm btn-primary download" %>
+          <% end %>
+        </div>
       </div>
     <% end %>
   </div>
