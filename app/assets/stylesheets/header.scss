@@ -19,20 +19,22 @@ header {
           margin: 0 !important;
           padding: 10px 0 0 0 !important;
           a {
-            width: 200px;
-            height: 40px !important;
+            width: 500px;
+            height: 60px !important;
             margin: 0;
-            font-size: 24px;
-            // background: image-url("logo.png") no-repeat 0 0;
+            font-size: 36px;
+            font-weight: bold;
+            background: image-url("logo.png") no-repeat 0 0;
             background-size: contain;
             display: block;
             white-space: nowrap;
-            // text-indent: 99999px;
+            text-indent: 80px;
           }
         }
       }
       .navbar-nav {
         li {
+          font-size: 18px;
           a {
             padding: 20px;
             .gravatar {

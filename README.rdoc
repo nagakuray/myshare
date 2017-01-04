@@ -1,28 +1,13 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+=== 作るまでのプロセス
+* devise認証のところを作る 1日
+* スライド検索してとって来れるようにする。1日
+* トップページの検索画面作る 1日
+* ユーザページ作っておく 0.5日
+* お気に入り登録、あとでみる機能を作る 1日
+* ユーザのフォロー、フォロワー機能作る 1日
+* メモ帳機能を作る 2日
+* ランキングページを作る 1日
+* 簡単な試験、改修する。 1日
+* デザインを修正する。 1日
