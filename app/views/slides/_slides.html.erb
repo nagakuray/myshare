@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="container-inner inner-default clearfix">
+    <% slides.each do |slide| %>
+      <div class="slide-box">
+        <div class="image">
+          <div class="img-wrap">
+            <%= image_tag(slide.xpath('ThumbnailXLargeURL').text, alt: slide.xpath('Description').text) %>
+          </div>
+        </div>
+        <div class="detail">
+          <p class="title">
+            <a href=<%= slide.xpath('URL').text %>; target="_blank"><%= slide.xpath('Title').text %></a>
+          </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
